@@ -9,9 +9,9 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songInfo = document.getElementsByClassName('songInfo');
 
 let songs = [
-    { songName: "Pasoori - Shae Gill, Ali Sethi", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "Kesariya (From Brahmastra)", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "Kho gaye Hum Kahan", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
+    { songName: "Pasoori - Shae Gill, Ali Sethi", filePath: "songs/Pasoori....mp3", coverPath: "covers/1.jpg" },
+    { songName: "Kesariya (From Brahmastra)", filePath: "songs/Kesariya Tera....mp3", coverPath: "covers/2.jpg" },
+    { songName: "Kho gaye Hum Kahan", filePath: "songs/Kho Gaye hum Kahan....mp3", coverPath: "covers/3.jpg" },
     { songName: "Wo Ladki", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
     { songName: "Tera Ban Jaunga", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
     { songName: "Ranjha (From Shershaah)", filePath: "songs/6.mp3", coverPath: "covers/6.jpg" },
