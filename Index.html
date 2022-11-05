@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify - Your favourite music player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Musify</li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="">Music</a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">Premium</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MIDDLE CONTAINER -->
+    <div class="container">
+        <div class="songList">
+            <h1>Best Of All Time - Bollywood</h1>
+            <div class="songItem-container">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Pasoori - Shae Gill,Ali Sethi</span>
+                    <span class="songlistplay"><span class="timestamp">03:44<i id="0"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Kesariya (From "Brahmastra")</span>
+                    <span class="songlistplay"><span class="timestamp">04:28<i id="1"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Kho gaye Hum Kahan</span>
+                    <span class="songlistplay"><span class="timestamp">03:33<i id="2"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Wo Ladki</span>
+                    <span class="songlistplay"><span class="timestamp">04:12<i id="3"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Tera Ban Jaunga</span>
+                    <span class="songlistplay"><span class="timestamp">03:56<i id="4"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Ranjha (From "Shershaah")</span>
+                    <span class="songlistplay"><span class="timestamp">03:48<i id="5"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Raataan Lambiyan (From "Shershaah") </span>
+                    <span class="songlistplay"><span class="timestamp">03:50<i id="6"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Excuses - AP Dhillon</span>
+                    <span class="songlistplay"><span class="timestamp">02:56<i id="7"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Zingaat</span>
+                    <span class="songlistplay"><span class="timestamp">03:59<i id="8"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Bol Do Na Zara</span>
+                    <span class="songlistplay"><span class="timestamp">04:52<i id="9"
+                                class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner">
+
+        </div>
+    </div>
+
+
+    <!-- BOTTOM CONTAINER  -->
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <i id="previous" class="fa-solid fa-3x fa-backward"></i>
+            <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+            <i id="next" class="fa-solid fa-3x fa-forward"></i>
+        </div>
+        <div id="masterSongName" class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> 
+        </div>
+    </div>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/077c58acc8.js" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="Script.js"></script>
+</body>
+
+</html>
