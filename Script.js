@@ -5,6 +5,7 @@ let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
+let songItemPlay = document.querySelectorAll('.songItemPlay');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songInfo = document.getElementsByClassName('songInfo');
 
@@ -42,6 +43,23 @@ masterPlay.addEventListener('click', () => {
     }
 })
 
+// forEach((element,i) => {
+//     element.getElementsByClassName('songItemPlay')[i].addEventListener('click', () => {
+//         if (audioElement.paused || audioElement.currentTime <= 0) {
+//             audioElement[i].play();
+//             songItemPlay[i].classList.remove('fa-circle-play');
+//             songItemPlay[i].classList.add('fa-circle-pause');
+//             gif.style.opacity = 1;
+//         }
+//         else {
+//             audioElement[i].pause();
+//             songItemPlay[i].classList.remove('fa-circle-pause');
+//             songItemPlay[i].classList.add('fa-circle-play');
+//             gif.style.opacity = 0;
+//         }
+//     })
+// })
+
 // Listen to Events 
 audioElement.addEventListener('timeupdate', () => {
     // Update seekbar
@@ -58,6 +76,19 @@ const makeAllPlays = () => {
     Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
         element.classList.add('fa-circle-play');
         element.classList.remove('fa-circle-pause');
+
+        // if (audioElement.paused || audioElement.currentTime <= 0) {
+        //     audioElement.play();
+        //     element.classList.remove('fa-circle-play');
+        //     element.classList.add('fa-circle-pause');
+        //     gif.style.opacity = 1;
+        // }
+        // else {
+        //     audioElement.pause();
+        //     element.classList.remove('fa-circle-pause');
+        //     element.classList.add('fa-circle-play');
+        //     gif.style.opacity = 0;
+        // }
     })
 }
 
